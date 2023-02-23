@@ -1,11 +1,12 @@
 import React from "react";
 import { StyleSheet,View,Text, SafeAreaView } from "react-native";
+import StackNavigation from './src/navigation/StackNavigation'
 
 const App = () =>{
     return (
-        <SafeAreaView style={{flex:1,backgroundColor:'red'}}>
-
-        </SafeAreaView>
+        <View style={{flex:1}}>
+            <StackNavigation/>
+        </View>
     )
 }
 

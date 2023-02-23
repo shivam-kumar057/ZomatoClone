@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-//import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MoneyScreen from '../screen/MoneyScreen';
 import DeliveryScreen from '../screen/DeliveryScreen';
 import DinningScreen from '../screen/DinningScreen';
@@ -13,26 +13,26 @@ const TabNavigation = () => {
   return (
 
     <Tab.Navigator
-    //   screenOptions={({route})=>({
-    //     tabBarActiveTintColor:'blue',
-    //     headerShown: false,
-    //     tabBarIcon: ({ focused,tintColor }) => {
-    //       let iconname=''
-    //       if(route.name ==="Home") {
-    //           iconname='home'
-    //       }  else if (route.name==='My Class') {
-    //         iconname='list'
-    //       } else if (route.name==='wishList') {
-    //         iconname='heart'
-    //       } else if (route.name ==='profile') {
-    //         iconname='user'
-    //       }
-    //       return(
-    //         <FontAwesome5 name={iconname} size={20} color={focused ? "blue":'black'} />
-    //       )
-    //     }
-    //   })
-    // }
+      screenOptions={({route})=>({
+        tabBarActiveTintColor:'black',
+        headerShown: false,
+        tabBarIcon: ({ focused,tintColor }) => {
+          let iconname=''
+          if(route.name ==="Delivery") {
+              iconname='delivery-dining'
+          }  else if (route.name==='Dinning') {
+            iconname='fastfood'
+          } else if (route.name==='Grocery') {
+            iconname='food-bank'
+          } else if (route.name ==='Money') {
+            iconname='shopping-bag'
+          }
+          return(
+            <MaterialIcons name={iconname} size={30} color={focused ? "red":'gray'} />
+          )
+        }
+      })
+    }
     >
       <Tab.Screen name="Delivery" component={DeliveryScreen} />
       <Tab.Screen name="Dinning" component={DinningScreen} />
