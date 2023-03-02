@@ -79,6 +79,72 @@ export const homeStyle = StyleSheet.create({
         shadowColor: 'black',
         elevation:4,
         shadowRadius: 3,
+    },
+    homeSpecialDishContainer: {
+        height: 100,
+        width: windowWidth / 2.1,
+        borderRadius: 10, margin: 5,
+        flexDirection: 'row',
+        borderRadius: 15,
+        backgroundColor: 'white',
+        shadowOffset: { width: -0.5, height: 0.5 },
+        shadowOpacity: 0.2,
+        shadowColor: 'black',
+        shadowRadius: 3,
+        elevation:3
+    },
+    hotelNameStyle : {
+        width: '50%', 
+        height: 90, 
+        justifyContent: 'space-around', 
+        alignItems: 'center'
+    },
+    homeDishImageStyle: {
+        height: 90,
+        width: '100%',
+        justifyContent: 'flex-end'
+    },
+    homeTextDiscountStyle: {
+        fontSize: 17,
+        color: 'white',
+        fontWeight: '700'
+    },
+    homeDiscountView: {
+        bottom: 5,
+        alignSelf: 'center'
+    },
+    exploreContainer :{
+        height:120,
+        width:100,
+        shadowOffset: { width: -0.5, height: 0.5 },
+        shadowOpacity: 0.2,
+        shadowColor: 'black',
+        shadowRadius: 3,
+        borderRadius: 15,
+        backgroundColor:'white',
+        margin:5,
+        elevation:3
+    },
+    hotelContainer : {
+        height:windowHeight/2.8,
+        width:windowWidth*0.95,
+        shadowOffset: { width: -0.5, height: 0.5 },
+        shadowOpacity: 0.2,
+        shadowColor: 'black',
+        shadowRadius: 3,
+        borderRadius: 15,
+        backgroundColor:'white',
+        alignSelf:'center',
+        elevation:3
+    },
+    hotelMainContainer : {
+        width:windowWidth*0.95,
+        height :windowHeight/4.3,
+        backgroundColor:'blue',
+        borderTopLeftRadius:15,
+        borderTopRightRadius:15,
+       
     }
+
 
 })
